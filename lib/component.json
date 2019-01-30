@@ -1,0 +1,127 @@
+{
+  "_type": "custom-type",
+  "_order": 10,
+  "_categories": [
+    "Common Controls"
+  ],
+  "_frameworks": [
+    "angular"
+  ],
+  "_isNative": true,
+  "_hide": false,
+  "_sortType": "Feedback",
+  "_componentListHTML": "<i class=\"cds cdsiconfont-alert\"></i>",
+  "_label": "Template",
+  "_cdsNode": {
+    "type": "tag",
+    "name": "custom-selector",
+    "attribs": {
+      "cds-id": "custom-type",
+      "[customInput1]": "some string",
+      "[customInput2]": false,
+      "style": "display: block;"
+    }
+  },
+  "_containerRef": [
+
+  ],
+  "_properties": [
+    {
+      "id": "identifier",
+      "label": "Identifier",
+      "target": "cds-id",
+      "type": "text",
+      "weight": -110,
+      "taxonomy": {
+        "name": "component"
+      },
+      "description": "The identifier of the component.",
+      "readonly": true
+    },
+    {
+      "id": "customInput1",
+      "label": "Custom Input 1",
+      "target": "[customInput1]",
+      "type": "text",
+      "weight": -110,
+      "taxonomy": {
+        "name": "component"
+      },
+      "description": "description: how it works.",
+      "defaultValue": "some string"
+    },
+    {
+      "id": "customInput2",
+      "label": "Custom Input 2",
+      "target": "[customInput2]",
+      "type": "boolean",
+      "weight": -110,
+      "taxonomy": {
+        "name": "component"
+      },
+      "parent": true,
+      "values": [
+        {
+          "key": false,
+          "value": false,
+          "properties": [
+            {
+              "id": "customSubInput1",
+              "label": "Custom Sub Input 1",
+              "target": "[customSubInput1]",
+              "type": "text",
+              "weight": -110,
+              "taxonomy": {
+                "name": "customInput2",
+                "label": "Sub Input Title",
+                "weight": -107,
+                "render": "sub-category",
+                "parent": "component"
+              },
+              "description": "description: how it works.",
+              "defaultValue": "some string"
+            }
+          ]
+        }
+      ],
+      "description": "description: how it works.",
+      "defaultValue": false
+    },
+    {
+      "id": "customInput3",
+      "label": "Custom Input 3",
+      "target": "customInput3",
+      "type": "list",
+      "weight": -110,
+      "taxonomy": {
+        "name": "component"
+      },
+      "values": [
+        {
+          "key": "key1",
+          "value": "value1"
+        },
+        {
+          "key": "key2",
+          "value": "value2"
+        },
+        {
+          "key": "key3",
+          "value": "value3"
+        }
+      ],
+      "description": "description: how it works.",
+      "defaultValue": "key1"
+    },
+    {
+      "id": "customOutput",
+      "label": "Custom Output",
+      "target": "(customOutput)",
+      "type": "event",
+      "values": "functionname",
+      "description": "description: how it works.",
+      "default_values": "functionname",
+      "flag": "events"
+    }
+  ]
+}

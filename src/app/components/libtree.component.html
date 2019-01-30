@@ -1,0 +1,27 @@
+<!-- <div class="lib-tree">
+  <ul>
+    <li ng-repeat="fol in attrs.libTree | filter:{Type: constants.hprm.RecordType.folder} | orderBy:['Type','Title']" class="left-nav {{fol.Title}}">
+      <div ng-if="fol.Type===constants.hprm.RecordType.folder" data-drop="true" data-jqyoui-options="{ hoverClass: 'hover' }" jqyoui-droppable="{ onDrop:'dropCallback(fol)', beforeDrop: 'beforeDropCallback(fol)' }">
+        <i ng-class="(fol.isTreeOpen) ? 'glyphicon glyphicon-folder-open' : 'glyphicon glyphicon-folder-close'" ng-click="toggleTreeNode(fol)"></i>&nbsp;&nbsp;
+        <label ng-class="{'selected' : fol.Uri===currentContainer.Uri && !SearchMode && !AuditFlag}" ng-click="moveTo(fol.Uri, false)">{{fol.Title}}</label>
+      </div>
+      <div ng-if="(fol.Type===constants.hprm.RecordType.MMRCont && !contract.isRestrictAuditor) || fol.Type===constants.hprm.RecordType.ICCCont || (fol.Type===constants.hprm.RecordType.ATMCont && !contract.isRestrictAuditor) || (fol.Type===constants.hprm.RecordType.AUDITCont && contract.isReadyForAudit)">
+        <i class="fa {{fol.FileType.Icon}}"ng-click="toggleTreeNode(fol)"></i>&nbsp;&nbsp;
+        <label ng-class="{'selected' : fol.Uri===currentContainer.Uri && !SearchMode}" ng-click="moveTo(fol.Uri, false)">{{fol.Title}}</label>
+      </div>
+      <div lib-tree="fol.childRecords" ng-show="fol.isTreeOpen"></div>
+    </li>
+  </ul>
+</div> -->
+
+<div class="lib-tree">
+  <ul class="ul-padding-inline-start">
+    <li *ngFor="let fol of libData" class="li-list-style-none">
+      <div *ngIf="isShow">
+        <i class="glyphicon" [ngClass]="{'glyphicon-folder-open': fol.isTreeOpen, 'glyphicon-folder-close': !fol.isTreeOpen}" (click)="iconClick(fol)"></i>&nbsp;&nbsp;
+        <label class="text-font title-bg" (click)="moveTo(fol.Uri,false)">{{fol.Title}}</label>
+      </div>
+      <lib-tree [libData]="fol.ChildRecords" *ngIf="fol.isTreeOpen"></lib-tree>
+    </li>
+  </ul>
+</div>

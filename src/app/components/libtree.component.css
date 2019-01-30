@@ -1,0 +1,22 @@
+@import "../../assets/css/glyphicons-halflings.css";
+
+.text-font {
+  font-family: Tahoma;
+  font-size: 13px;
+  color: #666666;
+  font-weight: normal;
+}
+.li-list-style-none {
+  list-style:none;
+}
+.ul-padding-inline-start {
+  padding-inline-start: 20px;
+}
+
+.title-bg {
+}
+
+.title-bg:hover{
+  background-color: #600;
+  color: white;
+}

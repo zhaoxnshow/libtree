@@ -1,0 +1,33 @@
+{
+  "$schema": "./../node_modules/ng-packagr/package.schema.json",
+  "name": "template",
+  "version": "1.0.0",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public-api.ts",
+      "cssUrl": "inline"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://uidesigner.accenture.com/gitlab/stage/components/template"
+  },
+  "author": {
+    "name": "Qu Zhi",
+    "email": "zhi.qu@accenture.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://uidesigner.accenture.com/gitlab/stage/components/template/issues"
+  },
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  },
+  "schemas": ["component.json"]
+
+}
