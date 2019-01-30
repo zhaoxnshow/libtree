@@ -12,11 +12,3 @@
 .ul-padding-inline-start {
   padding-inline-start: 20px;
 }
-
-.title-bg {
-}
-
-.title-bg:hover{
-  background-color: #600;
-  color: white;
-}
