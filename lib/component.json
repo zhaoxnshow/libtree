@@ -1,31 +1,31 @@
 {
-  "_type": "custom-type",
-  "_order": 10,
-  "_categories": [
+  "selector": "lib-tree",
+  "moduleClassName": "LibTreeModule",
+  "order": 10,
+  "categories": [
     "Common Controls"
   ],
-  "_frameworks": [
+  "frameworks": [
     "angular"
   ],
-  "_isNative": true,
-  "_hide": false,
-  "_sortType": "Feedback",
-  "_componentListHTML": "<i class=\"cds cdsiconfont-alert\"></i>",
-  "_label": "Template",
-  "_cdsNode": {
+  "isNative": true,
+  "hide": false,
+  "sortType": "Feedback",
+  "componentListHTML": "<i class=\"cds cdsiconfont-alert\"></i>",
+  "label": "libtreeTest",
+  "cdsNode": {
     "type": "tag",
-    "name": "custom-selector",
+    "name": "lib-tree",
     "attribs": {
-      "cds-id": "custom-type",
       "[customInput1]": "some string",
       "[customInput2]": false,
       "style": "display: block;"
     }
   },
-  "_containerRef": [
+  "containerRef": [
 
   ],
-  "_properties": [
+  "properties": [
     {
       "id": "identifier",
       "label": "Identifier",
@@ -120,7 +120,7 @@
       "type": "event",
       "values": "functionname",
       "description": "description: how it works.",
-      "default_values": "functionname",
+      "defaultvalues": "functionname",
       "flag": "events"
     }
   ]

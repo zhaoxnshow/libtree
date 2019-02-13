@@ -10,4 +10,4 @@
  *
  *
  */
-export * from './src/template.module';
+export * from './src/libtree.module';

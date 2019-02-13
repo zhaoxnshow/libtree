@@ -5,7 +5,7 @@
         <i class="glyphicon" [ngClass]="fol.isTreeOpen?fol.IconOpen:fol.IconClose" [ngStyle]="{'color': fol.Theme}" (click)="iconClick(fol)"></i>&nbsp;&nbsp;
         <label class="text-font" (click)="moveTo(fol.Uri,false)" changeThemeWhenHover [bgColor]="fol.BgColor" [fontColor]="fol.FontColor">{{fol.Title}}</label>
       </div>
-      <lib-tree [libData]="fol.ChildRecords" *ngIf="fol.isTreeOpen"></lib-tree>
+      <lib-tree [libData]="fol.ChildRecords" [selfInvokeFlag]=true *ngIf="fol.isTreeOpen"></lib-tree>
     </li>
   </ul>
 </div>
