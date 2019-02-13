@@ -1,0 +1,41 @@
+{
+  "$schema": "./../node_modules/ng-packagr/package.schema.json",
+  "name": "libtree-test",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://uidesigner.accenture.com/gitlab/stage/components/libtree-test"
+  },
+  "author": {
+    "name": "Qu Zhi",
+    "email": "zhi.qu@accenture.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://uidesigner.accenture.com/gitlab/stage/components/libtree-test/issues"
+  },
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "5.5.2",
+    "zone.js": "^0.8.4"
+  },
+  "schemas": [
+    "component.json"
+  ],
+  "main": "bundles/libtree-test.umd.js",
+  "module": "fesm5/libtree-test.js",
+  "es2015": "fesm2015/libtree-test.js",
+  "esm5": "esm5/libtree-test.js",
+  "esm2015": "esm2015/libtree-test.js",
+  "fesm5": "fesm5/libtree-test.js",
+  "fesm2015": "fesm2015/libtree-test.js",
+  "typings": "libtree-test.d.ts",
+  "metadata": "libtree-test.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.7.1"
+  }
+}
