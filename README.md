@@ -64,4 +64,7 @@ To know more information about how to develop Components for your project and us
 
 3. Preparation after（npm run packagr）before zip
   3.1 copy lib\assets\fonts into dist\assets\
+  3.2 copy lib\component.json into dist\
+  3.3 change label:'libtreeTest' to you want in component.json 
+  3.4 zip dist
       
